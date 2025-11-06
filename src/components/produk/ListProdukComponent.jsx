@@ -8,8 +8,7 @@ function ListProdukComponent() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        const fetchProduk = async () => {
+    const fetchProduk = async () => {
             try {
                 const response = await listProduk();
                 setProdukData(response.data);
@@ -21,6 +20,7 @@ function ListProdukComponent() {
             }
         };
 
+    useEffect(() => {
         fetchProduk();
     }, []);
 
