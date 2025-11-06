@@ -12,7 +12,7 @@ function AddProdukComponent() {
     const [stok, setStok] = useState("");
     const [hargaBeli, setHargaBeli] = useState("");
     const [hargaJual, setHargaJual] = useState("");
-    const [status, setStatus] = useState("Tersedia");
+    const [status, setStatus] = useState("Aktif");
     const [error, setError] = useState(null);
     const [successMessage, setSuccessMessage] = useState(null);
 
