@@ -67,7 +67,7 @@ function ListProdukComponent() {
                     <i className="bi bi-check-circle me-1"></i>Tersedia
                 </span>
             );
-        } else if (status === "NonAktif") {
+        } else if (status === "Non-Aktif") {
             return (
                 <span className="badge rounded-pill bg-danger">
                     <i className="bi bi-x-circle me-1"></i>Tidak Tersedia
@@ -212,7 +212,7 @@ function ListProdukComponent() {
                                 >
                                     <option value="all">Semua Status</option>
                                     <option value="Aktif">Tersedia</option>
-                                    <option value="NonAktif">Tidak Tersedia</option>
+                                    <option value="Non-Aktif">Tidak Tersedia</option>
                                 </select>
                             </div>
                         </div>
