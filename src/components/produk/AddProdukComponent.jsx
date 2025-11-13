@@ -65,7 +65,7 @@ function AddProdukComponent() {
                 setStok("");
                 setHargaBeli("");
                 setHargaJual("");
-                setStatus("Tersedia");
+                setStatus("");
             }
             else {
                 const newProduct = {
@@ -84,7 +84,7 @@ function AddProdukComponent() {
                 setStok("");
                 setHargaBeli("");
                 setHargaJual("");
-                setStatus("Tersedia");
+                setStatus("Aktif");
             }
             
         } catch (error) {
@@ -176,8 +176,8 @@ function AddProdukComponent() {
                         value={status}
                         onChange={(e) => setStatus(e.target.value)}
                     >
-                        <option value="Tersedia">Tersedia</option>
-                        <option value="Tidak Tersedia">Tidak Tersedia</option>
+                        <option value="Aktif">Tersedia</option>
+                        <option value="Non-Aktif">Tidak Tersedia</option>
                     </select>
                 </div>
                 <button className="btn btn-primary" type="submit">
